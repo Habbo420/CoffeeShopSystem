@@ -6,8 +6,7 @@ import java.util.UUID;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class CustomerHelper {
-
+public class ChefHelper {
     public static boolean isNullOrEmpty(String str) {
         if (str == null || str.isEmpty()) {
             return true;
@@ -16,8 +15,8 @@ public class CustomerHelper {
     }
 
     public static boolean isValidEmail(String email) {
-        EmailValidator ev = EmailValidator.getInstance();
-        return ev.isValid(email);
+        EmailValidator valid = EmailValidator.getInstance();
+        return valid.isValid(email);
     }
 
     public static boolean isValidPhoneNumber(String phoneNumber) {
